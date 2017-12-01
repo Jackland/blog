@@ -37,7 +37,7 @@ class CommonController extends Controller
             }
 
 
-            $pic_name = time() . rand(10000, 99999) . "." . $type;//图片名称
+            $pic_name = date("Ymd" ). rand(10000, 99999) . "." . $type;//图片名称
             $pic_url = $root_path.'/' . $pic_name;//上传后图片路径+名称
 
 

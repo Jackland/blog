@@ -17,7 +17,6 @@ class LoginController extends CommonController
 {
     public function login()
     {
-//        dd($_SERVER); 打印服务的信息
         if($input=Input::all()){
 
             $rules = [
@@ -49,8 +48,6 @@ class LoginController extends CommonController
             }
 
         }else{
-
-
             return view('admin.login');
         }
 
@@ -58,7 +55,7 @@ class LoginController extends CommonController
     }
     public function addPwd() //生成初始化加密密码
     {
-        $str='1234567';
+        $str='123456';
         $pwd=Crypt::encrypt($str); //生成加密字符串
 
         dd($pwd);

@@ -4,12 +4,12 @@
     <!--面包屑导航 开始-->
     <div class="crumb_warp">
         <!--<i class="fa fa-bell"></i> 欢迎使用登陆网站后台，建站的首选工具。-->
-        <i class="fa fa-home"></i> <a href="{{ url('admin/index') }}">首页</a> &raquo; <a href="#">商品管理</a> &raquo; 添加商品
+        <i class="fa fa-home"></i> <a href="{{ url('admin/right') }}">首页</a> &raquo;分类管理
     </div>
     <!--面包屑导航 结束-->
 
 	<!--结果页快捷搜索框 开始-->
-	<div class="search_wrap">
+	<!-- <div class="search_wrap">
         <form action="" method="post">
             <table class="search_tab">
                 <tr>
@@ -27,7 +27,7 @@
                 </tr>
             </table>
         </form>
-    </div>
+    </div> -->
     <!--结果页快捷搜索框 结束-->
 
     <!--搜索结果页面 列表 开始-->
@@ -77,7 +77,7 @@
                 </table>
 
 
-<div class="page_nav">
+<!-- <div class="page_nav">
 <div>
 <a class="first" href="/wysls/index.php/Admin/Tag/index/p/1.html">第一页</a> 
 <a class="prev" href="/wysls/index.php/Admin/Tag/index/p/7.html">上一页</a> 
@@ -91,10 +91,10 @@
 <span class="rows">11 条记录</span>
 </div>
 </div>
+ -->
 
 
-
-                <div class="page_list">
+               <!--  <div class="page_list">
                     <ul>
                         <li class="disabled"><a href="#">&laquo;</a></li>
                         <li class="active"><a href="#">1</a></li>
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-    </form>
+    </form> -->
     <!--搜索结果页面 列表 结束-->
 
 
