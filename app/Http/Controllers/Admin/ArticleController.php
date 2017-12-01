@@ -69,6 +69,8 @@ class ArticleController extends CommonController
     public function update($art_id)
     {
         $input = Input::except('_token','_method');
+
+       
         $re = Article::where('art_id',$art_id)->update($input);
         if($re){
             return redirect('admin/article');
