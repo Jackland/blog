@@ -31,8 +31,8 @@ class CommonController extends Controller
                 echo json_encode(array("error"=>"清上传jpg,png或gif类型的图片！"));
                 exit;
             }
-            if ($size > (500 * 1024)) {
-                echo json_encode(array("error"=>"图片大小已超过500KB！"));
+            if ($size > (1000 * 1024)) {
+                echo json_encode(array("error"=>"图片大小已超过1000KB！"));
                 exit;
             }
 

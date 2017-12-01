@@ -69,7 +69,7 @@
 
                     <th>缩略图：</th>
                     <td>
-                        <a class="btn" id="btn">上传图片</a> 最大500KB，支持jpg，gif，png格式。
+                        <a class="btn" id="btn">上传图片</a> 最大1M，支持jpg，gif，png格式。
                         <ul id="ul_pics" class="ul_pics clearfix"></ul>
 
                     </td>
