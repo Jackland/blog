@@ -167,11 +167,13 @@
 
                     var data = JSON.parse(info.response);
                     var imgsrc=data.pic;
-                    var arr= imgsrc.split('\\');
+                    var arr= imgsrc.split('uploads');
 
-                    $('#srcval').val(arr[4]);
+                    var arrimg='uploads'+arr[1];
 
-                    $("#" + file.id).html("<div class='img'><img style='max-width: 350px; max-height:100px;' src='/" +arr[4] + "'/></div><p>" + data.name + "</p>");
+                    $('#srcval').val(arrimg);
+
+                    $("#" + file.id).html("<div class='img'><img style='max-width: 350px; max-height:100px;' src='/" +arrimg + "'/></div><p>" + data.name + "</p>");
                 },
                 Error: function(up, err) { //上传出错的时候触发
                     alert(err.message);
