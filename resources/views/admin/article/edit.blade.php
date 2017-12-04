@@ -120,6 +120,19 @@
     </form>
 </div>
 <script>
+
+    if($('#srcval').val()==''){
+        var newsrc= $('#art_thumb_img')[0].src;
+        var arra= newsrc.split('uploads');
+        var newsrc='uploads'+arra[1];
+        $('#srcval').val(newsrc);
+
+    }
+
+
+
+
+
     var uploader = new plupload.Uploader({ //创建实例的构造方法
         runtimes: 'html5,flash,silverlight,html4',
         //上传插件初始化选用那种方式的优先级顺序
