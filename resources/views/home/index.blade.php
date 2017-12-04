@@ -17,7 +17,7 @@
                     我的手就在你的手里
                     不舍不弃。</p>
             </ul>
-            <div class="avatar"><a href="#"><span>后盾</span></a> </div>
+            <!-- <div class="avatar"><a href="#"><span>后盾</span></a> </div> -->
         </section>
     </div>
     <div class="template">
