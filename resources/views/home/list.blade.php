@@ -6,7 +6,7 @@
 @endsection
 @section('content')
     <article>
-        <h1 class="t_nav"><span>{{$field->cate_title}}</span><a href="{{url('/')}}" class="n1">网站首页</a><a href="{{url('cate/'.$field->cate_id)}}" class="n2">{{$field->cate_name}}</a></h1>
+        <h1 class="t_nav"><span>{{$field->cate_title}}</span><a href="{{url('/')}}" class="n1">网站首页</a><a href="{{url('cate/'.$field->id)}}" class="n2">{{$field->cate_name}}</a></h1>
         <div class="newblog left">
             @foreach($data as $d)
                 <h2>{{$d->art_title}}</h2>
