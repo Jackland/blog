@@ -34,6 +34,8 @@ class IndexController extends CommonController
         $submenu = Category::where('cate_pid',$cate_id)->get();
 
         $field = Category::find($cate_id);
+
+
         return view('home.list',compact('field','data','submenu'));
     }
 
@@ -47,7 +49,8 @@ class IndexController extends CommonController
         $article['pre'] = Article::where('art_id','<',$art_id)->orderBy('art_id','desc')->first();
         $article['next'] = Article::where('art_id','>',$art_id)->orderBy('art_id','asc')->first();
 
-        $data = Article::where('cate_id',$field->cate_id)->orderBy('art_id','desc')->take(6)->get();
+        $data = Article::where('cate_id',$field->id)->orderBy('art_id','desc')->take(6)->get();
+
 
         return view('home.new',compact('field','article','data'));
     }
