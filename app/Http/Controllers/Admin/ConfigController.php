@@ -55,7 +55,8 @@ class ConfigController extends Controller
     public function putFile()
     {
         $config = Config::pluck('conf_content','conf_name')->all();
-        $path = base_path().'\config\web.php';
+        $path = base_path('config').'\web.php';
+
         $str = '<?php return '.var_export($config,true).';';
         file_put_contents($path,$str);
     }
