@@ -43,6 +43,10 @@ Route::group(['prefix'=>'admin','middleware'=>['AuthAdmin'],'namespace'=>'Admin'
     Route::resource('category', 'CategoryController');//分类的资源路由
     Route::resource('article', 'ArticleController');//文章的资源路由
 
+
+    Route::get('Domweb/getdata', 'DomwebController@getdata');
+
+
     Route::post('links/changeorder', 'LinksController@changeOrder');
     Route::resource('links', 'LinksController');
 
