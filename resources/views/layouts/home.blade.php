@@ -12,6 +12,23 @@
     <![endif]-->
 </head>
 <body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5a4ddd5ed7591465c7067e58/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+
+
+
 <header>
     <div id="logo"><a href="{{url('/')}}"></a></div>
     <nav class="topnav" id="topnav">
