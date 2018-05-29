@@ -9,10 +9,6 @@ this is my life  i have a dream this is big busser
 
 
 
-<<<<<<< HEAD
 
-test test test test test test test test test 
-
-=======
 dev dev dev dev dev dev dev dev
->>>>>>> dev_001
+
